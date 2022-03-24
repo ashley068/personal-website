@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <title>My Website</title>
+  </head>
+  <body>
+    <div>
+      <div class="sidebar">
+        <img class="profile-pic" src="img/profile.jpg" alt="" />
+        <div class="profile-name">
+          <h2>Mary Ford</h2>
+          <p><a>UI/UX/DESIGNER</a> IN CANADA</p>
+        </div>
+        <div class="ui link list">
+          <a class="item active" href="#home">HOME</a>
+          <a class="item" href="#about">ABOUT</a>
+          <a class="item" href="#education">EDUCATION</a>
+          <a class="item" href="">SERVICES</a>
+          <a class="item" href="">SKILLS</a>
+          <a class="item">EXPERIENCE</a>
+          <a class="item">WORK</a>
+          <a class="item">BLOG</a>
+          <a class="item">CONTACT</a>
+        </div>
+        <div>
+          <p style="margin-top: 5px; color: rgb(97, 97, 97)">
+            @Copyright ©2018 All rights reserved
+          </p>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <div class="home" id="home">
+          <div class="mySlides fade" style="display: block">
+            <img src="img/portrait.jpg" style="width: 100%" />
+            <div class="caption">
+              <h1>I am <br />a Designer</h1>
+              <button
+                class="ui grey basic button"
+                onclick="window.open('https://github.com/')"
+              >
+                PORTFOLIO<i class="box icon" style="margin-left: 6px"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/slide2.jpg" style="width: 100%" />
+            <div class="caption2">
+              <h1>Creative. Innovative. Enthusiastic.</h1>
+            </div>
+          </div>
+
+          <div class="carousel-indicators">
+            <span class="dot dot-active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+
+        <div class="about-page" id="about">
+          <div class="section-header">
+            <span>ABOUT ME</span>
+            <h2>WHO AM I ?</h2>
+          </div>
+
+          <div class="introduction">
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam totam velit et praesentium eligendi culpa obcaecati
+              aperiam cupiditate ullam dolor eaque
+            </h5>
+            <h5>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cum
+              qui doloribus nulla modi ea alias optio earum possimus aliquam
+              eius provident ut iusto laborum obcaecati illum atque,
+              consequuntur tempora.
+            </h5>
+          </div>
+
+          <div class="ui four cards">
+            <a class="green card">
+              <div>
+                <i class="lightbulb outline icon green"></i>
+              </div>
+              <h3>Graphic Design</h3>
+            </a>
+            <a class="teal card">
+              <div>
+                <i class="laptop icon teal"></i>
+              </div>
+              <h3>Web Design</h3>
+            </a>
+            <a class="blue card">
+              <div>
+                <i class="database icon blue"></i>
+              </div>
+              <h3>Software</h3>
+            </a>
+            <a class="violet card">
+              <div>
+                <i class="mobile alternate icon violet"></i>
+              </div>
+              <h3>Application</h3>
+            </a>
+          </div>
+
+          <div class="intro-block">
+            <h2>
+              I am happy to know you<br /><br />
+              that 300+ projects done sucessfully!
+            </h2>
+            <button class="ui inverted button">Hire Me</button>
+          </div>
+        </div>
+
+        <div class="education-page" id="education">
+          <div class="section-header">
+            <span>EDUCATION</span>
+            <h2>EDUCATION</h2>
+          </div>
+          <div class="accordion">
+            <button class="accordion-btn">Master Degree Graphic Design</button>
+            <div class="panel" style="display: block">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                tempore velit error vitae, porro voluptatibus praesentium neque
+                dolorem ea officiis possimus culpa animi accusantium? Fuga
+                aliquid voluptates dolorum facilis adipisci.
+              </p>
+            </div>
+
+            <button class="accordion-btn">
+              Bachelor Degree of Computer Science
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="accordion-btn">
+              Diploma in Information Technology
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
